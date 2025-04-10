@@ -23,12 +23,15 @@ function fixedNav(){
         logoPic.width = 180
     }
     secArray.forEach(item=>{
+        let offsetThreshold = window.innerHeight * 0.3; 
         let targetLinkData = item.getAttribute("id");
         let targetLink = Array.from(linkArray).find(obj => {
             return obj.getAttribute("data-target") === targetLinkData;
           })
 
-        if (((window.scrollY  > item.offsetTop+2) && (window.scrollY < (item.offsetTop + item.offsetHeight)))) {
+        let secThreshold= item.offsetTop - offsetThreshold
+
+        if (((window.scrollY  > secThreshold) && (window.scrollY < (secThreshold + item.offsetHeight)))) {
             targetLink.classList.add("expand");
         }else{
             targetLink.classList.remove("expand");
@@ -44,6 +47,7 @@ window.onresize = () => {
 }
 
 linkArray.forEach(item=>{
+    let offsetThreshold = window.innerHeight * 0.3; 
     item.addEventListener('mouseover', function() {
         this.classList.add("expand"); 
     });
@@ -51,8 +55,9 @@ linkArray.forEach(item=>{
     item.addEventListener('mouseout', function() {
         let targetSectionID = item.getAttribute("data-target");
         let targetSection = document.getElementById(targetSectionID)
+        let targetecThreshold= targetSection.offsetTop - offsetThreshold
 
-        if (!((window.scrollY >  targetSection.offsetTop) && (window.scrollY <= (targetSection.offsetTop + targetSection.offsetHeight)))) {
+        if (!((window.scrollY >  targetecThreshold) && (window.scrollY < (targetecThreshold + targetSection.offsetHeight)))) {
             this.classList.remove("expand");
         }
     })

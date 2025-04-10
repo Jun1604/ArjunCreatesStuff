@@ -15,8 +15,8 @@ body{
 }
 
 #navbar{
-    padding-bottom: 300px;
-    background-color: #FAFAFA;
+    padding-bottom: 220px;
+    background-color: #E8F1F5;
 }
 
 #navigation{
@@ -31,6 +31,11 @@ body{
     font-weight: 900;
     font-size: 200%;
     transition: 0.3s;
+}
+
+#navigation ul{
+    padding:0;
+    margin:0;
 }
 
 #navigation li{
@@ -93,12 +98,14 @@ body{
 }
 
 #logo img{
+    padding-top:20px;
+    padding-bottom:30px;
     vertical-align: middle;
 }
 
 #AboutMe{
     background-color:#FAFAFA;
-    padding-top:10px;
+    padding-top:60px;
 }
 
 .AboutMeContainer{
@@ -118,12 +125,13 @@ body{
 .profileimageContainer{
     cursor:pointer;
     border: solid 7px rgba(0, 74, 124);
+    transition: all 0.3s ease-in-out;
 }
 
 .profileimageContainer:hover{
     transition: .3s ease-in-out;
     border-color: rgba(0, 74, 124, .9);
-
+    filter:brightness(120%)
 }
 .profileimageContainer img{
     display:block;
@@ -138,6 +146,7 @@ body{
     padding-bottom:5px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: justify;
 }
 
 .highlight{
@@ -147,7 +156,6 @@ body{
 .mediaLinks{
     display:flex;
     justify-content: space-evenly;
-    
 }
 
 #Projects{
@@ -156,7 +164,7 @@ body{
 }
 
 .title{
-    padding-top:150px;
+    padding-top:120px;
     padding-bottom:20px;
     text-align:center;
     font-size:3em;
@@ -167,15 +175,14 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom:150px;
+    padding-bottom:120px;
     z-index:-1;
 }
 
 .projectGrid img{
     display:block;
     max-height: 296px;
-    border-radius:5px;
-    border:solid 5px rgba(0, 74, 124, 1);
+    border-radius: 20px;
 }
 .projectContainer:hover{
     transform: scale(1.1);
@@ -183,8 +190,12 @@ body{
 }
 
 .projectContainer{
+    border-bottom:none;
+    border:solid 5px rgba(0, 74, 124, 1);
     display:flex;
-    flex-flow: column;
+    flex-direction: column;
+    border-radius: 20px;
+
 }
 
 .projectTitle{
@@ -193,7 +204,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    border-radius:5px;
+    margin-bottom: -10px;
 }
 
 .title2{
@@ -262,7 +273,7 @@ align-items: center;
 
 
 #endSpace{
-    padding-bottom:60px;
+    padding-bottom:40px;
     background-color:rgba(0, 74, 124, 0.95);
     display:flex;
     justify-content: space-between;
@@ -294,5 +305,5 @@ align-items: center;
 
 
 #endSpace p{
-    padding-top:50px;
+    padding-top:30px;
 }
