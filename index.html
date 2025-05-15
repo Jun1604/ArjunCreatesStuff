@@ -6,16 +6,17 @@
     <title>ArjunCreatesStuff</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="WebsiteLogo.png" />
 </head>
 
 <body>
-    <section>
+    <section class="sec" id="remove">
         <div id="space"></div>
         <div id = "navbar">
             <nav id="navigation">
                 <ul>
                     <li id="logo">
-                        <a href="#space"><img id="logoPic" src="LightLogo.png" width="180px"></a>
+                        <a href="#space"><img id="logoPic" src="LightLogo.png"></a>
                     </li>
                     <li>
                         <div class="linkContainer" data-target="AboutMe">
@@ -23,19 +24,14 @@
                         </div>
                     </li>
                     <li>
-                        <div class="linkContainer" data-target="Projects">
-                            <a href="#Projects">Projects</a>
-                        </div> 
-                    </li>
-                    <li>
                         <div class="linkContainer" data-target="Experience">
                             <a href="#Experience">Experience</a>
                         </div> 
                     </li>
                     <li>
-                        <div class="linkContainer" data-target="MyLinks">
-                            <a href="#MyLinks">My Links</a>
-                        </div>
+                        <div class="linkContainer" data-target="Projects">
+                            <a href="#Projects">Projects</a>
+                        </div> 
                     </li>
                 </ul>
             </nav>
@@ -53,12 +49,58 @@
                 </div>
             </div>
             <div class="row2"> 
-                <h3>My journey in web design began in 2022 when I participated in Google’s Computer Science Summer Institute, learning the basics of frontend development and creating various projects. Fast forward to today, and I’ve expanded my skill set beyond web design. I’ve learned extensively about algorithms, data structures, and problem-solving techniques that have sharpened my technical knowledge.
-                </h3>
-                <h3>Along the way, I’ve gained hands-on experience with different programming languages, frameworks, and development tools. From optimizing complexities in code performance to understanding the deeper nuances of coding languages, I’ve developed a passion for practicing efficient development.</h3>
-                <h3>As I continue my studies, I’m excited to explore more areas of computer science, specifically randomized algorithms and big-data management. I’m always eager to learn, grow, and tackle new challenges in the tech world.
-                </h3>
-                <h3>I thoroughly enjoy cooking, listening to music, playing badminton, watching anime, and traveling in my free time. Feel free to reach out if you'd like to collaborate, or if you’re interested in learning more about my work!</h3>
+                <h3 style="text-align: center;">I thoroughly enjoy cooking, hiking, listening to music, playing badminton, watching anime, and traveling in my free time. Feel free to reach out if you'd like to collaborate, or if you’re interested in learning more about my work!</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec" id="Experience">
+        <div class="titleContainer">
+            <h1 class="title2" >My Journey</h1>
+        </div>
+        <div class="timeline">
+            <div class="container left-container">
+                <img src="diploma.png">
+                <div class="text-box">
+                    <h2>High School</h2>
+                    <small>2022</small>
+                    <p>Obtained an Advanced Regents High School Diploma</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container right-container">
+                <img src="cssiLogo.jpg">
+                <div class="text-box">
+                    <h2>Google CSSI</h2>
+                    <small>2022</small>
+                    <p>Completed an introductory project-based HTML/CSS and JavaScript curriculum taught by Google Engineers</p>
+                    <p>Attended product design, resume development, and software engineering interview workshops</p>
+                    <p>Delivered a collaborative final project presentation that included a live demonstration to Google employees and community leaders</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container" >
+                <img src="caralogo.jpg">
+                <div class="text-box">
+                    <h2>CARA</h2>
+                    <small>2022-2023</small>
+                    <p>Guided High School Seniors and Juniors through post-secondary opportunities, education, and careers.</p>
+                    <p>Ensured students completed essential financial aid applications, including FAFSA and TAP, to secure funding for their education</p>
+                    <p> Supervised a caseload of 222 high school seniors, tracking their post-secondary plans and providing ongoing guidance to ensure successful outcomes</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container right-container">
+                <img src="cunylogo.png">
+                <div class="text-box">
+                    <h2>CUNY Queens College</h2>
+                    <small>2022-2026</small>
+                    <p>Pursuing a B.S in Computer Science</p>
+                    <span class="right-container-arrow"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -66,115 +108,65 @@
     <section class="sec" id="Projects">
         <h1 class="title">Check out some of my Projects!</h1>
         <div class="projectGrid">
-            <div id="project1" class="projectContainer">
-                <a href="https://jun1604.github.io/GreatAndRandomRecipesWebsite/" target="_blank" rel="noopener noreferrer"><img src="GreatRecipes.png"></a>
-                <div class="projectTitle">
-                    <p>Recipe Website</p>
+            
+            <div class="rowItem">
+                <a href="https://quiz-app-rrfw.onrender.com/" target="_blank" rel="noopener noreferrer"><img src="QuizApp.png"></a>
+                <div>
+                    <p>Quiz App</p>
                 </div>
             </div>
-            <div id="project2" class="projectContainer">
+           
+            <div class="rowItem middle">
                 <a href="https://jun1604.github.io/EngravedForYou/" target="_blank" rel="noopener noreferrer"><img src="EngravedForU.png"></a>
-                <div class="projectTitle">
+                <div>
                     <p>EngravedForU</p>
                 </div>
             </div>
-            <div id="project3" class="projectContainer">
+            <div class="rowItem">
+                <a href="https://jun1604.github.io/GreatAndRandomRecipesWebsite/" target="_blank" rel="noopener noreferrer"><img src="GreatRecipes.png"></a>
+                <div>
+                    <p>Recipe Website</p>
+                </div>
+            </div>
+            
+            
+            <div class="rowItem middle">
                 <a href="https://jun1604.github.io/Mental-Health-Quiz/" target="_blank" rel="noopener noreferrer"><img src="MentalHealthQuiz.png"></a>
-                <div class="projectTitle">
+                <div>
                     <p>Mental Health Quiz</p>
                 </div>
-            </div>
-        </div>
+            </div> 
+                    
+    </div>
     </section>
-
-    <section class="sec" id="Experience">
-        <div class="titleContainer">
-            <h1 class="title2">Work Experience</h1>
-        </div>
-        <div class="workContainer">
-            <div class="workbox" id="work1">
-                <img src="caraLogo.png" width="300px">
-                <div class="info">
-                    <h5>College Bridge Coach</h5>
-                    <h5>August 2022 - August 2023</h5>
-                </div>
-                <h3>College Access: Research & Action (CARA) is a NYC nonprofit organization in partnership with the NYC DOE dedicated to increasing access to higher education for historically underrepresented students.</h3>
-                <ul>
-                    <li>
-                        <p>Ensured students completed essential financial aid applications, including FAFSA and TAP, to secure funding for their education
-                        </p>
-                    </li>
-                    <li>
-                        <p>Provided summer outreach and support to mitigate student melt and ensure seamless transitions to post-secondary destinations</p>
-                    </li>
-                    <li>
-                        <p>Managed and distributed 167 transcripts to colleges and other post-secondary institutions for current students and alumni
-                        </p>
-                    </li>
-                    <li>
-                        <p>Supervised a caseload of 222 high school seniors, tracking their post-secondary plans and providing ongoing guidance to ensure successful outcomes
-
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="workbox" id="work2">
-                <img src="cssiLogo.jpg" width="300px">
-                <div class="info">
-                    <h5>Participant</h5>
-                    <h5>July 2022 - August 2022</h5>
-                </div>
-                <h3>Google’s Computer Science Summer Institute (CSSI) is a free, immersive, and intensive program designed for graduating high school seniors who are interested in computer science and technology. </h3>
-                <ul>
-                    <li>
-                        <p> Completed an introductory project-based HTML/CSS and JavaScript curriculum taught by
-                            Google engineers.
-                            </p>
-                    </li>
-                    <li>
-                        <p>Attended product design, resume development, and software engineering interview workshops
-                        </p>
-                    </li>
-                    <li>
-                        <p>Configured 12 individual coding projects in HTML, CSS and JavaScript.</p>
-                    </li>
-                    <li>
-                        <p>Delivered a collaborative final project presentation that included a live demonstration to Google employees and community leaders </p>
-                    </li>
-                </ul>
-            </div>    
-        </div>
-    </section>
-
-    <section class="sec" id="MyLinks">
-       <h1 class="title">Follow Along With My Links!</h1>
-        <div class="iconContainer">
-            <a href="https://github.com/Jun1604" target="_blank" rel="noopener noreferrer">
-                <div class="links">
-                    <img src="github-mark.png">
-                    <p>GitHub</p>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/arjun-chhabra-22150b247/" target="_blank" rel="noopener noreferrer">
-                <div class="links">
-                    <img src="InBug-Black.png">
-                    <p>LinkedIn</p>
-                </div>
-            </a>
-            <a href="Arjun Chhabra - Resume 2025.pdf" target="_blank" rel="noopener noreferrer">
-                <div class="links">
-                    <img src="document.png">
-                    <p>Resume</p>
-                </div>
-            </a>
-                
-        </div>        
-    </section>
-
+    
     <footer>
         <div id="endSpace">
-            <p>©2025 ArjunCreatesStuff. All rights reserved</p>
-            <p>Built By Arjun Chhabra</p>
+            <div class="footerItem">
+                <p>©2025 ArjunCreatesStuff. All rights reserved</p>
+            </div>
+             <div class="footerItem" style="transform:translateX(-25px)">
+                <p>Built By Arjun Chhabra</p>
+            </div>
+            <div class="footerItem">
+                <div class="iconContainer">
+                    <a href="https://github.com/Jun1604" target="_blank" rel="noopener noreferrer">
+                        <div class="links">
+                            <img src="github-mark.png">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arjun-chhabra-22150b247/" target="_blank" rel="noopener noreferrer">
+                        <div class="links">
+                            <img src="InBug-Black.png">
+                        </div>
+                    </a>
+                    <a href="Arjun Chhabra-Resume 2025.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="links">
+                            <img src="document.png">
+                        </div>
+                    </a>  
+                </div>        
+            </div>
         </div>
     </footer>
 
